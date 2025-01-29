@@ -1,88 +1,143 @@
 # Arvino Zulka's Web3 Portfolio
 
-Website ini adalah portofolio pribadi dan identitas digital dari Arvino Zulka, yang dibangun menggunakan teknologi Web3. Website ini menampilkan pengalaman kerja, proyek, sertifikasi, dan informasi kontak.
+Website portfolio profesional berbasis Web3 untuk Arvino Zulka, menampilkan pengalaman kerja, proyek, dan sertifikasi yang terverifikasi di blockchain.
 
-## Teknologi yang Digunakan
+## Fitur Utama
 
-- **Frontend**: React.js + Next.js
-- **Backend**: Node.js + Express
-- **Blockchain**: Solidity (untuk smart contract identitas)
-- **Database**: IPFS (untuk desentralisasi data)
+1. **Decentralized Identity**
+   - Profil dan data tersimpan di blockchain
+   - Verifikasi identitas menggunakan smart contract
+   - Manajemen profil terdesentralisasi
+
+2. **Portfolio Management**
+   - Penambahan dan pengelolaan proyek on-chain
+   - Showcase proyek dengan gambar dan teknologi
+   - Verifikasi riwayat proyek melalui blockchain
+
+3. **Certification Verification**
+   - Sistem verifikasi sertifikasi berbasis smart contract
+   - Manajemen sertifikasi terdesentralisasi
+   - Verifikasi otentisitas oleh pihak berwenang
+
+4. **Web3 Integration**
+   - Koneksi dengan MetaMask wallet
+   - Interaksi dengan smart contract Ethereum
+   - Penyimpanan data terdesentralisasi menggunakan IPFS
+
+## Teknologi
+
+- **Frontend**: 
+  - React.js 
+  - Next.js
+  - CSS Modules
+  - Font Awesome Icons
+
+- **Backend**: 
+  - Node.js
+  - Express
+  - Web3.js/Ethers.js
+
+- **Blockchain**: 
+  - Solidity Smart Contracts
+  - Ethereum Network
+  - MetaMask Integration
+
+- **Storage**: 
+  - IPFS
+  - Smart Contract State
+
+## Smart Contracts
+
+### Identity.sol
+- Manajemen profil dasar
+- Pengelolaan skill dan pengalaman
+- Verifikasi sertifikasi
+- Manajemen proyek portfolio
+- Sistem verifikasi multi-signature
 
 ## Struktur Proyek
 
 ```
 arvino-portfolio/
-├── pages/
-│   ├── index.js
-│   ├── about.js
-│   ├── portfolio.js
-│   ├── certifications.js
-│   ├── contact.js
-│   └── blog.js (opsional)
 ├── components/
-│   ├── Header.js
-│   ├── Footer.js
-│   ├── ProjectCard.js
-│   └── CertificationCard.js
+│   ├── Header.js        # Komponen header dengan Web3 connect
+│   ├── Layout.js        # Layout utama aplikasi
+│   └── ...
 ├── contracts/
-│   └── Identity.sol
-├── public/
-│   ├── profile.jpg
-│   └── favicon.ico
+│   └── Identity.sol     # Smart contract untuk identitas
+├── pages/
+│   ├── index.js         # Landing page
+│   ├── about.js         # Halaman profil
+│   ├── portfolio.js     # Portfolio proyek
+│   ├── certifications.js # Sertifikasi
+│   └── contact.js       # Halaman kontak
 ├── styles/
 │   ├── globals.css
-│   └── Home.module.css
+│   └── *.module.css     # CSS Modules
 ├── utils/
-│   └── ipfs.js (untuk integrasi IPFS)
-├── server/
-│   ├── index.js (untuk konfigurasi server Node.js)
-│   └── api/
-│       └── contact.js (untuk endpoint API kontak)
-├── .gitignore
-├── package.json
-└── README.md
+│   ├── Web3Context.js   # Context untuk Web3
+│   └── web3Utils.js     # Utility functions Web3
+└── public/
+    └── ...
 ```
 
-## Fitur
+## Cara Menjalankan
 
-1. **Landing Page**: Menampilkan foto profil, deskripsi singkat, dan tautan ke media sosial/Web3 wallet.
-2. **About Me**: Menampilkan informasi pribadi dan ringkasan pengalaman kerja.
-3. **Portfolio**: Menampilkan proyek-proyek yang telah dikerjakan dengan detail deskripsi, teknologi yang digunakan, dan kontribusi.
-4. **Certifications**: Menampilkan daftar sertifikasi dan tautan verifikasinya.
-5. **Contact Page**: Formulir kontak dan informasi untuk komunikasi lebih lanjut.
-6. **Smart Contract Integration**: Untuk autentikasi identitas atau menampilkan pengalaman kerja berbasis blockchain.
-
-## Cara Menjalankan Proyek
-
-1. **Clone repository ini**:
+1. **Clone Repository**
    ```bash
    git clone https://github.com/arvino/web3.git
    cd arvino-portfolio
    ```
 
-2. **Install dependencies**:
+2. **Install Dependencies**
    ```bash
    npm install
    ```
 
-3. **Jalankan aplikasi**:
+3. **Setup Environment**
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local dengan konfigurasi yang sesuai
+   ```
+
+4. **Deploy Smart Contract**
+   ```bash
+   npx hardhat run scripts/deploy.js --network <network_name>
+   ```
+
+5. **Jalankan Aplikasi**
    ```bash
    npm run dev
    ```
 
-4. **Buka di browser**:
+6. **Buka di Browser**
    ```
    http://localhost:3000
    ```
 
-## Mengatasi Peringatan dan Kerentanan
+## Penggunaan Web3
 
-- Jalankan `npm audit fix` untuk memperbaiki kerentanan yang terdeteksi.
-- Pertimbangkan untuk memperbarui paket yang didepresiasi seperti `ipfs-http-client` ke Helia.
+1. Pastikan MetaMask terinstall di browser
+2. Hubungkan wallet dengan mengklik tombol "Connect Wallet"
+3. Konfirmasi transaksi untuk setiap interaksi dengan smart contract
 
 ## Kontribusi
 
-Jika Anda ingin berkontribusi pada proyek ini, silakan fork repository ini dan buat pull request dengan perubahan yang Anda usulkan.
+Jika Anda ingin berkontribusi pada proyek ini:
+
+1. Fork repository
+2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
+3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke branch (`git push origin feature/AmazingFeature`)
+5. Buat Pull Request
+
+## Kontak
+
+Arvino Zulka
+- Email: arvinozulka@gmail.com
+- Website: https://www.arvino.my.id/
+- GitHub: https://github.com/arvino
+- LinkedIn: https://www.linkedin.com/in/arvino-zulka/
+- YouTube: https://www.youtube.com/@ArvinoZulka
 
 © 2025 Arvino Zulka. All rights reserved.

@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  z-index: 100;
+}
+
+.walletConnect {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.connectButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connectButton:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.accountInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.accountInfo i {
+  color: #3b82f6;
+} 
