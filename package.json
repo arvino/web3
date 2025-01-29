@@ -1,0 +1,22 @@
+{
+  "name": "web3-arvino",
+  "version": "1.0.0",
+  "description": "Website ini adalah portofolio pribadi dan identitas digital dari Arvino Zulka, yang dibangun menggunakan teknologi Web3. Website ini menampilkan pengalaman kerja, proyek, sertifikasi, dan informasi kontak.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^6.13.5",
+    "ipfs-http-client": "^50.0.0",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
