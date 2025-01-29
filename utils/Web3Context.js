@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import IdentityABI from '../contracts/artifacts/Identity.json';
+import IdentityABI from '../contracts/artifacts/contracts/src/Identity.sol/Identity.json';
 
 const Web3Context = createContext();
 
